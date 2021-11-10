@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>DJ MP3's</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body class="m-auto">
+    <nav class="navbar navbar-light navbar-expand-md d-xxl-flex justify-content-xxl-center navigation-clean"
+        style="background: #222222;">
+        <div class="container"><a class="navbar-brand" href="index.html"
+                style="font-weight: bold;color: var(--bs-cyan);font-style: italic;">DJ's MP3's</a><button
+                data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center"
+                id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"
+                            style="color: var(--bs-purple);font-weight: bold;font-style: italic;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="customers_1.html"
+                            style="color: #465765;font-style: italic;font-weight: bold;">customers</a></li>
+                    <li class="nav-item d-xxl-flex justify-content-center justify-content-xxl-center"
+                        style="color: #465765;"><a class="nav-link" href="orders_1.html"
+                            style="color: #465765;font-style: italic;font-weight: bold;">orders</a></li>
+                    <li class="nav-item" style="color: #465765;"><a class="nav-link" href="albums_1.html"
+                            style="color: #465765;font-style: italic;font-weight: bold;">albums</a></li>
+                    <li class="nav-item" style="color: #465765;"><a class="nav-link" href="artists_1.html"
+                            style="color: #465765;font-style: italic;font-weight: bold;">artists</a></li>
+                    <li class="nav-item" style="color: #465765;"><a class="nav-link" href="tracks_1.html"
+                            style="color: #465765;font-style: italic;font-weight: bold;">tracks</a></li>
+                    <li class="nav-item" style="color: #465765;"><a class="nav-link" href="download_items_1.html"
+                            style="color: #465765;font-style: italic;font-weight: bold;">download_items</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 style="padding: 5px;margin: 10px;margin-right: 0px;margin-bottom: 0px;margin-top: 0px;">Customers</h1>
+    <div class="table-responsive" style="margin: 20px;padding: 10px;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>customer_id</th>
+                    <th>customer_first_name</th>
+                    <th>customer_last_name</th>
+                    <th>customer_phone</th>
+                    <th>customer_street</th>
+                    <th>customer_apt</th>
+                    <th>customer_city</th>
+                    <th>customer_state</th>
+                    <th>customer_zip</th>
+                    <th>customer_email</th>
+                    <th>credit_card_number</th>
+                    <th>credit_card_exp</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A12345</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>555 999 2222</td>
+                    <td>12 Boardwalk Ave</td>
+                    <td></td>
+                    <td>Chicago</td>
+                    <td>IL</td>
+                    <td>55555</td>
+                    <td>JD@gmail.com</td>
+                    <td>1111222233334444</td>
+                    <td>02/22</td>
+                    <td><button class="btn btn-primary" type="button">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>A54321</td>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>999 555 6666</td>
+                    <td>15 Ocean Ave</td>
+                    <td>6</td>
+                    <td>New York City</td>
+                    <td>NY</td>
+                    <td>11111</td>
+                    <td>JS@gmail.com</td>
+                    <td>2222333355558888</td>
+                    <td>05/23</td>
+                    <td><button class="btn btn-primary" type="button">Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2 style="margin: 10px;margin-top: 10px;padding: 5px;">Add New Customer Information</h2>
+    <form class="text-start" style="font-weight: bold;margin: 20px;padding: 10px;">
+        <label class="form-label">First Name</label>
+        <input class="form-control" type="text" id="first_name" required="">
+        <label class="form-label">Last Name</label>
+        <input class="form-control" type="text" id="last_name" required="">
+        <label class="form-label">Customer Phone Number</label>
+        <input class="form-control" type="tel" id="phone_number" required="">
+        <label class="form-label">Street Address</label>
+        <input class="form-control" type="number" id="customer_street" required="">
+        <label class="form-label">Apt #</label>
+        <input class="form-control" type="text" id="apt_number">
+        <label class="form-label">City</label>
+        <input class="form-control" type="text" id="customer_city" required="">
+        <label class="form-label">State</label>
+        <input class="form-control" type="text" id="customer_state" minlength="2" maxlength="2" required="">
+        <label class="form-label">Zip Code</label>
+        <input class="form-control" type="number" id="customer_zip" required="">
+        <label class="form-label">Email&nbsp;</label>
+        <input class="form-control" type="email" id="customer_email" required="">
+        <label class="form-label">Credit Card Number</label>
+        <input class="form-control" type="number" id="customer_credit_card_number" required="">
+        <label class="form-label">Credit Card Exp</label>
+        <input class="form-control" type="number" id="customer_credit_card_exp" required="">
+        <button class="btn btn-primary d-xxl-flex justify-content-xxl-end" id="add_new_customer" type="button"
+            style="margin-top: 5px;padding: 5px 12px;">Add New Customer</button>
+    </form>
+    <footer class="footer-basic">
+        <p class="text-center copyright">DJ's MP3's © 2021</p>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
