@@ -1,1 +1,74 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"><title>DJ MP3's</title><link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="assets/css/styles.min.css"></head><body class="m-auto"><nav class="navbar navbar-light navbar-expand-md d-xxl-flex justify-content-xxl-center navigation-clean" style="background: #222222;"><div class="container"><a class="navbar-brand" href="index.html" style="font-weight: bold;color: var(--bs-cyan);font-style: italic;">DJ's MP3's</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" id="navcol-1"><ul class="navbar-nav mx-auto"><li class="nav-item"><a class="nav-link" href="index.html" style="color: var(--bs-purple);font-weight: bold;font-style: italic;">Home</a></li><li class="nav-item"><a class="nav-link" href="customers_1.html" style="color: #465765;font-weight: bold;font-style: italic;">customers</a></li><li class="nav-item d-xxl-flex justify-content-center justify-content-xxl-center"><a class="nav-link" href="orders_1.html" style="color: #465765;font-weight: bold;font-style: italic;">orders</a></li><li class="nav-item"><a class="nav-link" href="albums_1.html" style="color: #465765;font-weight: bold;font-style: italic;">albums</a></li><li class="nav-item"><a class="nav-link" href="artists_1.html" style="color: #465765;font-weight: bold;font-style: italic;">artists</a></li><li class="nav-item"><a class="nav-link" href="tracks_1.html" style="color: #465765;font-weight: bold;font-style: italic;">tracks</a></li><li class="nav-item"><a class="nav-link" href="download_items_1.html" style="color: #465765;font-weight: bold;font-style: italic;">download_items</a></li></ul></div></div></nav><h1 style="padding: 5px;margin: 10px;margin-right: 0px;margin-bottom: 0px;margin-top: 0px;">Orders</h1><div class="table-responsive" style="margin: 20px;padding: 10px;"><table class="table"><thead><tr><th>order_number</th><th>customer_id</th><th>order_date</th><th>credit_card_number</th><th>credit_card_exp</th><th>total_cost</th><th></th></tr></thead><tbody><tr><td>B546</td><td>A12345<br></td><td>10/23/21</td><td>1111222233334444<br></td><td>02/22</td><td>9.99</td><td><button class="btn btn-primary" type="button">Edit</button></td></tr><tr><td>B455</td><td>A54321<br></td><td>10/24/21</td><td>2222333355558888<br></td><td>05/23</td><td>12.99</td><td><button class="btn btn-primary" type="button">Edit</button></td></tr></tbody></table></div><h2 style="margin: 10px;margin-top: 10px;padding: 5px;">Add New Order Information</h2><form class="text-start" style="font-weight: bold;margin: 20px;padding: 10px;"><label class="form-label">Order Number</label><input class="form-control" type="text" id="order_number" required=""><label class="form-label">Customer ID</label><input class="form-control" type="text" id="customer_id" required=""><label class="form-label">Order Date</label><input class="form-control" type="text" id="order_date" required=""><label class="form-label">Credit Card Number</label><input class="form-control" type="number" id="credit_card_number" required=""><label class="form-label">Credit Card Expiration</label><input class="form-control" type="text" id="credit_card_exp"><label class="form-label">Total Cost</label><input class="form-control" type="text" id="total_cost" required=""><button class="btn btn-primary d-xxl-flex justify-content-xxl-end" id="add_new_order" type="button" style="margin-top: 5px;padding: 5px 12px;">Add New Order</button></form><label class="form-label"></label><label class="form-label" id="order_search_label">Search by Order Number:</label><input type="search"><button class="btn btn-primary d-xxl-flex justify-content-xxl-end" id="order_search" type="button" style="margin-top: 5px;padding: 5px 12px;">Search</button><footer class="footer-basic"><p class="text-center copyright">DJ's MP3's © 2021</p></footer><script src="assets/bootstrap/js/bootstrap.min.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>DJ MP3's</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="m-auto">
+    <nav class="navbar navbar-light navbar-expand-md d-xxl-flex justify-content-xxl-center navigation-clean" style="background: #222222;">
+        <div class="container"><a class="navbar-brand" href="index.html" style="font-weight: bold;color: var(--bs-cyan);font-style: italic;">DJ's MP3's</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse text-center text-sm-center text-md-center text-lg-center text-xl-center text-xxl-center d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: var(--bs-purple);font-weight: bold;font-style: italic;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="customers_1.html" style="color: #465765;font-weight: bold;font-style: italic;">customers</a></li>
+                    <li class="nav-item d-xxl-flex justify-content-center justify-content-xxl-center"><a class="nav-link" href="orders_1.html" style="color: #465765;font-weight: bold;font-style: italic;">orders</a></li>
+                    <li class="nav-item"><a class="nav-link" href="albums_1.html" style="color: #465765;font-weight: bold;font-style: italic;">albums</a></li>
+                    <li class="nav-item"><a class="nav-link" href="artists_1.html" style="color: #465765;font-weight: bold;font-style: italic;">artists</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tracks_1.html" style="color: #465765;font-weight: bold;font-style: italic;">tracks</a></li>
+                    <li class="nav-item"><a class="nav-link" href="download_items_1.html" style="color: #465765;font-weight: bold;font-style: italic;">download_items</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <h1 style="padding: 5px;margin: 10px;margin-right: 0px;margin-bottom: 0px;margin-top: 0px;">Orders</h1>
+    <div class="table-responsive" style="margin: 20px;padding: 10px;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>order_number</th>
+                    <th>customer_id</th>
+                    <th>order_date</th>
+                    <th>credit_card_number</th>
+                    <th>credit_card_exp</th>
+                    <th>total_cost</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>B546</td>
+                    <td>A12345<br></td>
+                    <td>10/23/21</td>
+                    <td>1111222233334444<br></td>
+                    <td>02/22</td>
+                    <td>9.99</td>
+                    <td><button class="btn btn-primary" type="button">Edit</button></td>
+                </tr>
+                <tr>
+                    <td>B455</td>
+                    <td>A54321<br></td>
+                    <td>10/24/21</td>
+                    <td>2222333355558888<br></td>
+                    <td>05/23</td>
+                    <td>12.99</td>
+                    <td><button class="btn btn-primary" type="button">Edit</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2 style="margin: 10px;margin-top: 10px;padding: 5px;">Add New Order Information</h2>
+    <form class="text-start" style="font-weight: bold;margin: 20px;padding: 10px;"><label class="form-label">Order Number</label><input class="form-control" type="text" id="order_number" required=""><label class="form-label">Customer ID</label><input class="form-control" type="text" id="customer_id" required=""><label class="form-label">Order Date</label><input class="form-control" type="text" id="order_date" required=""><label class="form-label">Credit Card Number</label><input class="form-control" type="number" id="credit_card_number" required=""><label class="form-label">Credit Card Expiration</label><input class="form-control" type="text" id="credit_card_exp"><label class="form-label">Total Cost</label><input class="form-control" type="text" id="total_cost" required=""><button class="btn btn-primary d-xxl-flex justify-content-xxl-end" id="add_new_order" type="button" style="margin-top: 5px;padding: 5px 12px;">Add New Order</button></form><label class="form-label"></label><label class="form-label" id="order_search_label">Search by Order Number:</label><input type="search"><button class="btn btn-primary d-xxl-flex justify-content-xxl-end" id="order_search" type="button" style="margin-top: 5px;padding: 5px 12px;">Search</button>
+    <footer class="footer-basic">
+        <p class="text-center copyright">DJ's MP3's © 2021</p>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
